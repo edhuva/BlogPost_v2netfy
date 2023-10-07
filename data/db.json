@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "My First Post",
+      "datetime": "September 25 12:57 PM",
+      "body": "Note that the development build is not optimized.To create a production build, use npm run build."
+    },
+    {
+      "id": 2,
+      "title": "My Second Post",
+      "datetime": "September 25 13:57 PM",
+      "body": "Note that the development build is not optimized.To create a production build, use npm run build."
+    },
+    {
+      "id": 3,
+      "title": "My Third Post",
+      "datetime": "September 25 12:57 PM",
+      "body": "Note that the development build is not optimized.To create a production build, use npm run build."
+    },
+    {
+      "id": 4,
+      "title": "My Forth Post",
+      "datetime": "September 25 12:57 PM",
+      "body": "Note that the development build is not optimized.To create a production build, use npm run build."
+    },
+    {
+      "id": 6,
+      "title": "Love",
+      "datetime": "October 03, 2023 3:45:29 PM",
+      "body": "I love you Laura Tamanikwa, you are my everything"
+    },
+    {
+      "id": 8,
+      "title": "Sky",
+      "datetime": "October 07, 2023 2:54:31 PM",
+      "body": "The sky is the limit, I will not rest until I achieve my goal.\n\nYou can now view edhuva_coding_site_rct in the browser.\n\n  http://localhost:3000\n\nNote that the development build is not optimized.\nTo create a production build, use npm run build. \n\nwebpack compiled successfully"
+    },
+    {
+      "id": 9,
+      "title": "Code e",
+      "datetime": "October 07, 2023 5:57:29 PM",
+      "body": "I love coding, Coding is my passion."
+    },
+    {
+      "id": 10,
+      "title": "Success",
+      "datetime": "October 07, 2023 6:12:13 PM",
+      "body": "Success is everything in life."
+    }
+  ]
+}

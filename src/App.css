@@ -1,0 +1,423 @@
+.app {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 15px gray;
+  }
+  
+  .headerTop {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /*Blog*/
+  .app_content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .Nav {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(8, 8, 8, 0.089);
+  }
+
+  .app__navtxt {
+    font-size: 11px;
+    color: hsl(198, 4%, 53%);
+  }
+
+  .msgStatus {
+    margin-top: 2rem;
+  }
+
+  .app__searchform {
+    flex: 1;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+    padding: 0 0.25rem;
+  }
+  
+  .app__searchform input:focus {
+  border: 1px solid hsl(200, 100%, 70%);
+  }
+  
+  .app__searchform label {
+  position: absolute;
+  left: -99999px;
+  }
+  
+  .app__searchform input[type="text"] {
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  }
+  
+  .Nav ul {
+    flex: 1;
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+  }
+
+  .Nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .Nav a:hover {
+    
+    background-color: black;
+    border-radius: .25rem;
+    padding: 0.25rem;
+  }
+
+  .Nav li {
+    margin: 0 .5rem;
+    padding: 0.25rem;
+    font-family: var(--font-main);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+  }
+
+  .Nav li:hover {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .app__Home {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    
+  }
+  
+  .app__post {
+    flex: 1;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    padding: .2rem;
+    background-color:var(--color-main);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px; 
+    margin: .5rem;
+  }
+
+  .app__posthead {
+    
+    background-color: rgb(248, 253, 250);
+  }
+  
+  .app__post h2 {
+    font-family: var(--font-main);
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 30px;
+    display: flex;
+    padding-left: .1rem;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+    border: solid .1px #e3dbec;
+  }
+  
+  .app__post a {
+    text-decoration: none;
+    padding: .2rem;
+  }
+  
+  .app__postDate {
+    font-family: var(--font-main);
+    color: hsl(198, 4%, 53%);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 30px;
+    display: flex;
+    padding: .1rem;
+  }
+  
+  .app__postbody {
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 0.04em;
+    line-height: 30px;
+    display: flex;
+    height: 100%;
+    margin: .3rem 0 .7rem;
+    padding: 0rem .2rem;
+    color: #4e4d4d;
+  }
+  
+  .app__postpage {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+  }
+
+  .app__postt {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: .2rem;
+    background-color:var(--color-main);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding: .2rem;
+    margin: 1rem 1rem 4.5rem 1rem;
+  }
+
+  .app__postt  h2 {
+    font-family: var(--font-main);
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 30px;
+    margin-left: .5rem;
+  }
+
+  .app__edit {
+    width: 50%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .app__postheader {
+    
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: .1rem;
+    border-radius: 4px;
+    border: solid .1px #e3dbec;
+    box-shadow: var(--box-shadow);
+    background-color: rgb(248, 253, 250);
+    gap: 3rem;
+  }
+  
+  .app__postheader svg {
+    width: 40px;
+    height: 50%;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    color: steelblue;
+    cursor: pointer;
+  }
+  
+  .app__postheader svg:focus,
+  .app__postheader svg:hover {
+    color: red;
+    outline: none;
+  }
+  
+  .app__postbtn {
+    margin: .5rem;
+    padding: 0.1rem 0.5rem;
+  }
+  
+  .app__newpost {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: .5rem;
+  }
+
+  .app__newpost h2 {
+  font-family: var(--font-main);
+  color: #000;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 30px;
+  display: flex;
+  padding: .2rem;
+  flex-direction: column;
+  }
+  
+  .app__newpostform {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: .1rem;
+  padding: .5rem;
+  } 
+  
+  .app__newpostform label {
+  margin-top: 1rem;
+  }
+  
+  .app__newpostform input:focus {
+  border: 1px solid hsl(200, 100%, 70%);
+  }
+  
+  .app__newpostform input[type="text"] {
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  }
+  
+  .app__newpostform textarea {
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+  width: 100%;
+  height: 150px;
+  font-size: 1rem;
+  outline: none;
+  }
+  
+  .app__newpostform button{
+  width:90%;
+  background: hsl(200, 100%, 50%, 0.1);
+  margin: 1rem;
+  border-radius: 1rem;
+  color: hsl(200, 100%, 50%);
+  padding: 0.25rem 0.5rem;
+  }
+
+  .app__editbtn {
+    width:90%;
+    background: hsl(200, 100%, 50%, 0.1);
+    margin: 1rem;
+    border-radius: 1rem;
+    color: hsl(200, 100%, 50%);
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .app__missing {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 4.5rem;
+  justify-content: center;
+  align-items: flex-start;
+  }
+  
+  .app__missing h2 {
+  margin: 2rem 1rem;
+  color: #000;
+  }
+  
+  .app__missing p {
+  margin: .2rem 1rem;
+  }
+  
+  .app__about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: .2rem 0rem 8rem 0rem;
+  padding: .5rem;
+  justify-content: center;
+  align-items: flex-start;
+  }
+  
+  .app__about h2 {
+  margin: .5rem 1rem;
+  color: #000;
+  }
+  
+  .app__about p {
+    margin: .1rem;
+    padding: 1rem;
+  }
+
+  .app__postcount {
+    margin-bottom: 1rem;
+  }
+  
+  .app__footer {
+  width: 100%;
+  height: 45vh;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  }
+  
+  .footer__bg {
+  background: var(--color-bdy);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  }
+
+.gradient__bg {
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
